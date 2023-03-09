@@ -1,5 +1,19 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.3"
-  }
+  },
+  "name": "memotest",
+  "description": "MiniProyecto del curso de Argentina Programa",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Fabrizio112/MemoTest)"
+  },
+  "author": "",
+  "license": "ISC"
 }
