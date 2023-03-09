@@ -1,0 +1,17 @@
+#tablero-de-juego {
+    height: 660px;
+}
+
+[id*="input"] {
+    transition: opacity 500ms;
+}
+
+input:disabled {
+    background-color: grey !important;
+}
+
+#resultado {
+    width: 800px;
+    height: 200px;
+    margin: 8rem auto;
+}
