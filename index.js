@@ -52,6 +52,18 @@ document.querySelectorAll(`[id*="input"]`).forEach((input) => {
         jugadaDelUsuario.push(inputTocado)
         setTimeout(() => {
             if (jugadaDelUsuario.length === 2) {
+                if (jugadaDelUsuario[0].id === jugadaDelUsuario[1].id) {
+                    jugadaDelUsuario.forEach((jugada) => {
+                        jugada.style.opacity = 0;
+                    })
+                    contadorDeTurnos++;
+                    resetearLaJugadaDelUsuario()
+                    cambiarLaOpacidadACero();
+                    return;
+                }
+
+
+
                 if (jugadaDelUsuario[0].name === jugadaDelUsuario[1].name) {
                     jugadaDelUsuario.forEach((jugada) => {
                         jugada.disabled = true;
